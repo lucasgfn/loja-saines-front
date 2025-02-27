@@ -2,7 +2,7 @@
 > O presente projeto é uma aplicação front-end que se integra com o  [Back-end da Loja Saines](https://github.com/lucasgfn/backend-spring-loja)
 
 ## Tecnologias Usadas e Bibliotecas
-- React
+- React - Vite
 - TypeScript
 - @tanstack/react-query
 
@@ -18,10 +18,21 @@
 2. Clonar esse repositório:
    ````bash
    git clone https://github.com/lucasgfn/loja-saines-front.git
+   ````
+   Entre na pasta:
+   ````
+   cd loja-saines-front
 
 3. Instalar as bibliotecas:
     ```
     npm install @tanstack/react-query
-5. Rodar a aplicação:
+    ```
+
+    - Se precisar baixar o vite para esse projeto:  
+      ```
+       npm install vite --save-dev
+4. Rodar a aplicação:
    ```
-   npm run dev 
+   npm run dev
+   ```
+   
