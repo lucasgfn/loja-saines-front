@@ -8,7 +8,7 @@
 
 ## Pré-Requisitos
 - [Node.js] (https://nodejs.org/)
-- [npm] (https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) 
+- [npm] (https://www.npmjs.com/) ou [yarn] (https://yarnpkg.com/) 
 
 ## Instalação
 
