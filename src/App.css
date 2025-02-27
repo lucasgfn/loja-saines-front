@@ -1,0 +1,32 @@
+body, html{
+    background-color: rgba(233, 237, 247, 0);
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 5%;
+  }
+  
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  
+}
+  
+
+.info{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    background: linear-gradient(to top, rgba(78, 77, 77, 0.471), rgb(233, 237, 247, 0)100%);
+    
+}
+
+  

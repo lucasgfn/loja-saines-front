@@ -1,0 +1,42 @@
+.info-container {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.infos {
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    border-radius: 15px;
+    color: #FFF;
+    width: 70%;
+    padding: 10%;
+    text-align: justify;
+   
+}
+
+.infos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img_model{
+    transform: translateX(150px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.img_model.visible {
+    transform: translateX(0); 
+    opacity: 1; 
+}
+
+#modelo img{
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 90%;
+    opacity: 1; 
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    
+}
