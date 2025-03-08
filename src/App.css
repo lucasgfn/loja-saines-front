@@ -9,7 +9,6 @@ body, html{
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    margin-top: 5%;
   }
   
 .card-grid {

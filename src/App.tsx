@@ -1,6 +1,7 @@
 
 import './App.css'
 import { Card } from './components/Card/card';
+import { Carroussel } from './components/Carroussel/carroussel';
 import { Header } from './components/Header/header'
 import { Info } from './components/Info/info';
 import { useProductData } from './hooks/useProductData';
@@ -21,6 +22,10 @@ function App() {
     <>
        <Header scrollToSection={scrollToSection}/>
         <div className="container">
+          <div className="carroussel">
+            <Carroussel />
+          </div>
+
           <div className="card-grid" id='card-grid'> 
               {data?.map(productData =>
                   <Card
