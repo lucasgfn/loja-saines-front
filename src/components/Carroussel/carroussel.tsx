@@ -4,7 +4,7 @@ import 'swiper/swiper-bundle.css';
 import {data} from "./util";
 import "./carroussel.css";
 
-export const Carroussel: React.FC = () => {
+export const Carroussel = () => {
     return (
         <div className="container">
             <Swiper 
@@ -12,14 +12,13 @@ export const Carroussel: React.FC = () => {
                 effect="fade"
                 autoplay={
                     {
-                        delay: 3500,
+                        delay: 2000,
                         disableOnInteraction: false,
                     }
                 }
                 pagination={{clickable: true}}
                 slidesPerView={1}
-                spaceBetween={30}
-            
+                loop={true}    
                 className="swiper-container"
             >
                 {data.map((item) => (

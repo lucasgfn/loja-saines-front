@@ -1,5 +1,5 @@
 
-export interface ProductData{
+export interface IProductData{
     id? : number,
     nome : string,
     marca : string,

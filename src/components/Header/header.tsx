@@ -3,10 +3,11 @@ import "./header.css"
 
 interface HeaderProps {
     scrollToSection: (section: string) => void
+
 }
 
 
-export const Header : React.FC<HeaderProps> = ({scrollToSection}) => {
+export const Header : React.FC<HeaderProps> = ({scrollToSection} ) => {
 
     return (
         
@@ -19,6 +20,7 @@ export const Header : React.FC<HeaderProps> = ({scrollToSection}) => {
                 <button onClick={() => scrollToSection('info-grid')}>
                     História da Saines
                 </button>
+               
             </div>
         </div>
         
