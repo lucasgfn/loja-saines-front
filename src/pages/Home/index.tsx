@@ -18,11 +18,7 @@ function Home() {
     }
   }
 
-  const handleProductSubmit = (productData: IProductData) => {
-    // Aqui você pode adicionar a lógica para lidar com o produto enviado
-    console.log('Produto adicionado:', productData);
-    // Você pode também atualizar o estado ou fazer uma chamada para a API para salvar o produto
-  };
+  
 
 
   return (
@@ -45,7 +41,6 @@ function Home() {
               <Info />
           </div>
          
-          <ProductForm />
      </div>
     </>
   )

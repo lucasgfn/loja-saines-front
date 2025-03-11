@@ -1,4 +1,3 @@
-
 import Home from './pages/Home/index'
 
 function App() {

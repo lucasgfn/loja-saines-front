@@ -4,10 +4,6 @@ import { IProductData } from "../../../interface/IProductData";
 import { useSendData } from "../../../hooks/useProductData";
 
 
-interface IProductDataProps {
-    onSubmit: (productData: IProductData) => void
-}
-
 export const ProductForm: React.FC = () => {
     const { mutate: sendData, isPending, error } = useSendData();
     const [product, setProduct] = useState<IProductData>({
