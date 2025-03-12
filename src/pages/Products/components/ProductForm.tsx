@@ -27,14 +27,14 @@ export const ProductForm: React.FC = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-        <input name="nome" value={product.nome} onChange={handleChange} placeholder="Nome" required />
-        <input name="marca" value={product.marca} onChange={handleChange} placeholder="Marca" required />
-        <input name="tipo" value={product.tipo} onChange={handleChange} placeholder="Tipo" required />
-        <input name="image" value={product.image} onChange={handleChange} placeholder="URL da Imagem" required />
-        <input type="number" name="price" value={product.price} onChange={handleChange} placeholder="Preço" required />
-        <button type="submit" disabled={isPending}>Cadastrar Produto</button>
-        {error && <p>Erro ao cadastrar produto: {error.message}</p>}
-    </form>
+            <input name="nome" value={product.nome} onChange={handleChange} placeholder="Nome" required />
+            <input name="marca" value={product.marca} onChange={handleChange} placeholder="Marca" required />
+            <input name="tipo" value={product.tipo} onChange={handleChange} placeholder="Tipo" required />
+            <input name="image" value={product.image} onChange={handleChange} placeholder="URL da Imagem" required />
+            <input type="number" name="price" value={product.price} onChange={handleChange} placeholder="Preço" required />
+            <button type="submit" disabled={isPending}>Cadastrar Produto</button>
+            {error && <p>Erro ao cadastrar produto: {error.message}</p>}
+        </form>
     );
 
 };
