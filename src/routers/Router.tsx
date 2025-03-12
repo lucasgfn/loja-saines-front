@@ -16,8 +16,8 @@ const router = createBrowserRouter([
                 element: <Erro/>,
             },
             {
-                path: "*", // Captura todas as rotas não definidas
-                element: <Erro />, // Redireciona para a página de erro
+                path: "*", 
+                element: <Erro />, 
             }
 
         ]
