@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AddProduct from "../pages/Products/AddProduct";
 import App from "../App";
+import ProductList from "../pages/Products/ProductList";
 
 const router = createBrowserRouter([
     {
@@ -12,8 +13,8 @@ const router = createBrowserRouter([
                 element: <AddProduct/>,
             },
             {
-                path: "/erro",
-                element: <Erro/>,
+                path: "/listar-produtos",
+                element: <ProductList/>,
             },
             {
                 path: "*", 

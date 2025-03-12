@@ -2,49 +2,50 @@
 import Box from '@mui/material/Box';
 import { DataGrid, GridColDef, GridValueOptionsParams } from '@mui/x-data-grid';
 import React from 'react';
+import { IProductData } from '../../interface/IProductData';
 
-const columns: GridColDef<(typeof rows)[number]>[] = [
-  { field: 'id', headerName: 'ID', width: 90 },
+const columns: GridColDef<IProductData>[] = [
+  { field: 'id', headerName: 'ID', width: 100 },
   {
-    field: 'firstName',
-    headerName: 'First name',
+    field: 'nome',
+    headerName: 'Nome',
+    width: 220,
+    editable: true,
+  },
+  {
+    field: 'marca',
+    headerName: 'Marca',
+    width: 190,
+    editable: true,
+  },
+  {
+    field: 'tipo',
+    headerName: 'Tipo',
     width: 150,
     editable: true,
   },
   {
-    field: 'lastName',
-    headerName: 'Last name',
-    width: 150,
-    editable: true,
+    field: 'img',
+    headerName: 'URL Image',
+    description: 'Adicione a URL da imagem do produto.',
+    width: 550,
   },
   {
-    field: 'age',
-    headerName: 'Age',
-    type: 'number',
-    width: 110,
-    editable: true,
-  },
-  {
-    field: 'fullName',
-    headerName: 'Full name',
-    description: 'This column has a value getter and is not sortable.',
-    sortable: false,
+    field: 'price',
+    headerName: 'Preço',
     width: 160,
-    valueGetter: (params: GridValueOptionsParams) => `${params.row.firstName || ''} ${params.row.lastName || ''}`,
   },
 ];
 
-const rows = [
-  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 14 },
-  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 31 },
-  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 31 },
-  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 11 },
-  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+// Definindo as linhas
+const rows: IProductData[] = [
+  { id: 1, nome: "Calça", marca: "Marca A", tipo: "Roupas", image: "https://example.com/image1.jpg", price: 49.99 },
+  { id: 2, nome: "Camisa", marca: "Marca B", tipo: "Roupas", image: "https://example.com/image2.jpg", price: 29.99 },
+  { id: 3, nome: "Tênis", marca: "Marca C", tipo: "Calçados", image: "https://example.com/image3.jpg", price: 89.99 },
+  
 ];
+
+
 
 export default function ProductList() {
   return (
